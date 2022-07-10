@@ -1,0 +1,12 @@
+# jpeg
+*.jpg
+*.JPG
+*.JPEG
+
+# png
+*.PNG
+*.png
+
+
+go.mod
+go.sum
