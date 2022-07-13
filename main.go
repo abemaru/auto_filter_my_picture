@@ -10,7 +10,6 @@ import (
 )
 
 func main() {
-	// ToDo: Support multiple files
 	files, err := ioutil.ReadDir("input")
 	if err != nil {
 		fmt.Println(err)
