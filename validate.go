@@ -1,6 +1,6 @@
 package main
 
-func listIsEqual(a, b []int) bool {
+func listIsEqual(a []string, b []string) bool {
 	if len(a) != len(b) {
 		return false
 	}

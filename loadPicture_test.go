@@ -4,15 +4,14 @@ import (
 	"testing"
 )
 
-func TestLoadPictures(t *testing.T) {
+func TestLoadPictures_正常系(t *testing.T) {
 	pictures, err := LoadPictures("input")
 	if err != nil {
 		t.Error(err)
 	}
+	expected := []string{"input/a.jpg", "input/b.jpg"}
 
-	if len(pictures) != 2 {
-		t.Error("Expected 2 pictures, got", len(pictures))
+	if !listIsEqual(pictures, expected) {
+		t.Error("Expected", pictures, "to equal", expected)
 	}
-
-	if pictures != ["abc.jpg", "test.jpg"] {
 }
